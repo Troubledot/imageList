@@ -1,0 +1,108 @@
+/* 公用样式 */
+
+
+/* 动画 */
+
+
+/* 心跳 */
+.pulse {
+  -webkit-animation: pulse 1s infinite;
+  animation: pulse 1s infinite;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+/* 云彩 */
+.cloud {
+  -webkit-animation: cloud 12s alternate infinite;
+  animation: cloud 12s alternate infinite;
+}
+@-webkit-keyframes cloud {
+    0% {
+        -webkit-transform:translateX(0);
+        transform:translateX(0);
+    }
+    50% {
+        -webkit-transform:translateX(100px);
+        transform:translateX(100px);
+    }
+    100% {
+        -webkit-transform:translateX(-100px);
+        transform:translateX(-100px);
+    }
+}
+
+@keyframes cloud {
+    0% {
+        -webkit-transform:translateX(0);
+        transform:translateX(0);
+    }
+    50% {
+        -webkit-transform:translateX(100px);
+        transform:translateX(100px);
+    }
+    100% {
+        -webkit-transform:translateX(-100px);
+        transform:translateX(-100px);
+    }
+}
+/* 鸟 */
+.bird {
+  -webkit-animation: bird 4s alternate infinite;
+  animation: bird 4s alternate infinite;
+}
+@-webkit-keyframes bird {
+    0% {
+        -webkit-transform:translate(40px,40px);
+        transform:translate(40px,40px);
+    }
+    50% {
+        -webkit-transform:translate(0,0);
+        transform:translate(0,0);
+    }
+    100% {
+        -webkit-transform:translate(-40px,-40px);
+        transform:translate(-40px,-40px);
+    }
+}
+
+@keyframes bird {
+    0% {
+        -webkit-transform:translate(40px,40px);
+        transform:translate(40px,40px);
+    }
+    50% {
+        -webkit-transform:translate(0,0);
+        transform:translate(0,0);
+    }
+    100% {
+        -webkit-transform:translate(-40px,-40px);
+        transform:translate(-40px,-40px);
+    }
+}
