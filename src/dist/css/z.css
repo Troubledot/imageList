@@ -13,4 +13,9 @@
 		border:1px solid #ccc;
 		margin-top: 20px;
 	}
+	p{
+		font-size: 18px;
+		color: #000;
+		font-weight: bold;
+	}
 }

@@ -1,15 +1,15 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>image Gallery</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="dist/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="dist/js/lib/showPic/showPic.js"></script>
+    <script src="dist/js/showPic.js"></script>
 </head>
 
 <body>
+
     <div class="gallery">
         <h1>Snapshots</h1>
         <ul>
@@ -20,10 +20,11 @@
                 <a href="dist/img/ka.jpg" title="Twisted Fate" onclick="showPic(this);return false;">卡牌大师</a>
             </li>
             <li>
-                <a href="dist/img/lisee.jpg" onclick="showPic(this);return false;" title="lisee" >盲僧</a>
+                <a href="dist/img/lisee.jpg" title="lisee" onclick="showPic(this);return false;"  >盲僧</a>
             </li>
         </ul>
         <img id="placeholder" src="dist/img/placeholder.jpg" alt="My image gallery">
+        <p id="description">Choose an image</p>
     </div>
 </body>
 
