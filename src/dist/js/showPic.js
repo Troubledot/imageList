@@ -38,4 +38,17 @@ function addLoadEvent(func){
 		}
 	}
 }
+function preparePlaceholder(){
+	var placeholder = document.createElement("img");
+	placeholder.setAttribute("id","placeholder");
+	placeholder.setAttribute("src","dist/img/placeholder.jpg");
+	placeholder.setAttribute("alt","My image gallery");
+	var description = document.createElement("p");
+	description.setAttribute("id","description");
+	var descText = document.createTextNode("Choose an image");
+	description.appendChild(descText);
+	document.body.appendChild(placeholder);
+	document.body.appendChild(description);
+}
 addLoadEvent(prepareGallery);
+addLoadEvent(preparePlaceholder);
