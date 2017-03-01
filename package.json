@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
-    "test":"cnpm i type-is -g,cnpm i tiny-lr -g,cnpm i time-stamp -g,cnpm i sparkles -g,cnpm i rimraf -g,cnpm i raw-body -g,cnpm i precss -g,cnpm i posthtml-custom-elements -g,cnpm i posthtml-css-modules -g,cnpm i posthtml -g,cnpm i postcss-modules -g,cnpm i postcss-easysprites -g,cnpm i postcss-display-inline-block -g,cnpm i ms -g,cnpm i lodash -g,cnpm i imagemin-pngquant -g,cnpm i imagemin -g,cnpm i http-errors -g,cnpm i has-gulplog -g,cnpm i gulp.spritesmith -g,cnpm i gulp-watch -g,cnpm i gulp-util -g,cnpm i gulp-uglify -g,cnpm i gulp-sourcemaps -g,cnpm i gulp-sftp -g,cnpm i gulp-sass -g,cnpm i gulp-ruby-sass -g,cnpm i gulp-rimraf -g,cnpm i gulp-replace -g,cnpm i gulp-rename -g,cnpm i gulp-remember -g,cnpm i gulp-posthtml -g,cnpm i gulp-postcss -g,cnpm i gulp-plumber -g,cnpm i gulp-minify-css -g,cnpm i gulp-livereload -g,cnpm i gulp-jshint -g,cnpm i gulp-imagemin -g,cnpm i gulp-htmlmin -g,cnpm i gulp-file-include -g,cnpm i gulp-ejs -g,cnpm i gulp-cssnano -g,cnpm i gulp-css-spriter -g,cnpm i gulp-css-base64 -g,cnpm i gulp-connect -g,cnpm i gulp-concat -g,cnpm i gulp-clean -g,cnpm i gulp-cached -g,cnpm i gulp-cache -g,cnpm i gulp-babel -g,cnpm i gulp-autoprefixer -g,cnpm i gulp -g,cnpm i depd -g,cnpm i css -g,cnpm i content-type -g,cnpm i connect -g,cnpm i concat-map -g,cnpm i bytes -g,cnpm i browser-sync -g,cnpm i babel-preset-es2015 -g,cnpm i babel-helpers -g,cnpm i babel-generator -g,cnpm i babel-core -g,cnpm i autoprefixer -g"
-  },
+    "build": "gulp"
+},
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.3.7",

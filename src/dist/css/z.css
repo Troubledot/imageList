@@ -1,13 +1,22 @@
+body{
+	font-family: "Helvetica","Arial",serif;
+	color: #333;
+	background-color: #ccc;
+	margin: 1em 10%;
+}
 .gallery{
-	padding: 20px;
+	padding: 20px;	
 	h1{
-		font-size: 28px;
+		color:#333;
+		background-color: transparent;
+		font-size: 20px;
 		font-weight: bold;
-		color: #000;
-		padding: 20px 0;
 	}
 	a{
-		font-size: 16px;
+		color: #c60;
+		background-color: transparent;
+		font-weight: bold;
+		text-decoration: none;
 	}
 	img{
 		border:1px solid #ccc;
@@ -18,4 +27,23 @@
 		color: #000;
 		font-weight: bold;
 	}
+	ul{
+		padding: 0;
+		overflow: hidden;
+	}
+	li{
+		float: left;
+		padding: 1em;
+		list-style: none;
+	}
+	#imagegallery{
+		list-style: none;
+		li{
+			display: inline;
+			a img{
+				border: 0;
+			}
+		}
+	}
+
 }
