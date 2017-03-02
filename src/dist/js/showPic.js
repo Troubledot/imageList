@@ -50,5 +50,6 @@ function preparePlaceholder(){
 	document.body.appendChild(placeholder);
 	document.body.appendChild(description);
 }
+
 addLoadEvent(prepareGallery);
 addLoadEvent(preparePlaceholder);

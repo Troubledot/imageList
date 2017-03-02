@@ -33,6 +33,8 @@ var gulp = require('gulp'), //基础库
 
 var htmlSrc = 'src/*.html',
     htmlDst = 'assets/',
+    txtSrc = 'src/*.txt',
+    txtDst = 'assets/',
     ejsSrc = 'src/*.ejs',
     ejsDst = 'assets/',
     libSrc = 'src/dist/js/lib/**/*',
@@ -84,6 +86,11 @@ gulp.task('lib', function() {
 gulp.task('font', function() {
     gulp.src(fontSrc)
         .pipe(gulp.dest(fontDst));
+});
+
+gulp.task('txt', function() {
+    gulp.src(txtSrc)
+        .pipe(gulp.dest(txtDst));
 });
 
 gulp.task('css', function() {
@@ -166,7 +173,7 @@ gulp.task('clean', function(cb) {
 
 // 默认任务 清空图片、样式、js并重建 运行语句 gulp
 gulp.task('default', ['clean'], function() {
-    gulp.start('lib', 'font', 'js', 'images', 'css', 'html', 'ejs');
+    gulp.start('lib', 'font', 'js', 'images', 'css', 'html', 'ejs','txt');
 });
 
 //使用connect启动一个Web服务器
@@ -205,4 +212,6 @@ gulp.task('watch', ['default', 'connect'], function() {
     gulp.watch(jsSrc, ['js']);
     // 监听lib
     gulp.watch(libSrc, ['lib']);
+    // 监听txt
+    gulp.watch(txtSrc, ['txt']);
 });
