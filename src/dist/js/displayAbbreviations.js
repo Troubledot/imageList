@@ -1,4 +1,5 @@
 function displayAbbreviations(){
+	console.log("abbr");
 	var support = document.getElementsByTagName && document.createElement && document.createTextNode;
 	if (!support) return false;
 	var abbreviations = document.getElementsByTagName('abbr');
@@ -29,6 +30,5 @@ function displayAbbreviations(){
 		header.appendChild(header_text);
 		document.body.appendChild(header);
 		document.body.appendChild(dlist);
-
 }
 addLoadEvent(displayAbbreviations);
