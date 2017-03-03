@@ -2,7 +2,6 @@ function displayCitations(){
 	//测试浏览器支持DOM方法
 	if (!document.getElementsByTagName || !document.createElement || !document.createTextNode) return false;
 	//获取所有引用
-	console.log(1);
 	var quote = document.getElementsByTagName("blockquote");
 	//遍历引用
 	for (var i = 0; i < quote.length; i++) {
@@ -26,11 +25,10 @@ function displayCitations(){
 		link.setAttribute("href",url);
 		//创建新的节点sup
 		var superScript = document.createElement("sup");
-		//把节点a 添加到新节点sup中
+		//把节点a 添加到新节点sup中	
 		superScript.appendChild(link);
 		//将sup节点添加到引用的最后一个节点中
 		elem.appendChild(superScript);
-		console.log(elem);
 	}
 }
 
