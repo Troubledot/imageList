@@ -80,3 +80,9 @@ table tr.odd {
 	font-size: 2.5em;
 	color: #000;
 }
+#slideshow{
+	position: relative;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+}
