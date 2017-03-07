@@ -1,10 +1,10 @@
 
-function styleHeaderSiblings(){
-	var headers = document.getElementsByTagName('h1');
+function styleElementSiblings(tag,theclass){
+	var Elements = document.getElementsByTagName(tag);
 	var elem;
-	for (var i = 0; i < headers.length; i++) {
-		elem = getNextElement(headers[i].nextSibling);
-		elem.style.fontSize = "2em";
+	for (var i = 0; i < Elements.length; i++) {
+		elem = getNextElement(Elements[i].nextSibling);
+		addClass(elem,theclass);
 	}
 	console.log(elem);
 
@@ -18,4 +18,6 @@ function styleHeaderSiblings(){
 		return null;
 	}
 }
-addLoadEvent(styleHeaderSiblings);
+addLoadEvent(function(){
+	styleElementSiblings("h1","intro")
+});

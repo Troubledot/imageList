@@ -48,3 +48,31 @@ body{
 	}
 
 }
+table{
+	margin: auto;
+	border: 1px solid #699;
+}
+table caption{
+	margin: auto;
+	padding: .2em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+table th{
+	font-weight: normal;
+	text-align: left;
+	border: 1px solid #699;
+	background: #99c;
+	color: #000;
+}
+table th,table td{
+	width: 10em;
+	padding: .5em;
+}
+table tr.odd {
+	background: #ffc;
+}
+.intro{
+	font-size: 2em;
+	color: #000;
+}
