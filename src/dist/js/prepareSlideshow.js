@@ -9,20 +9,13 @@ function prepareSlideshow(){
 	preview.style.top = "0";
 	var linklist = document.getElementById("linklist");
 	var links = linklist.getElementsByTagName("a");
-	// for (var i = 0; i < links.length; i++) {
-	// 	links[i].onmouseover = function(){
-	// 		var xpos = - (i+1) * 100;
-	// 		moveElement("preview",xpos,0,10);
-	// 	}		
-	// }
-	console.log(links);
 	links[0].onmouseover = function(){
 		moveElement("preview",-100,0,10)
 	};
 	links[1].onmouseover = function(){
 		moveElement("preview",-200,0,10)
 	};
-	links[0].onmouseover = function(){
+	links[2].onmouseover = function(){
 		moveElement("preview",-300,0,10)
 	}
 }
