@@ -1,14 +1,17 @@
 function prepareSlideshow(){
 	if (!document.getElementById) return false;
 	if (!document.getElementsByTagName) return false;
-	if (!document.getElementById("preview")) return false;
 	if (!document.getElementById("linklist")) return false;
-	var preview = document.getElementById("preview");
-	preview.style.position = "absolute";
-	preview.style.left = "0";
-	preview.style.top = "0";
-	var linklist = document.getElementById("linklist");
-	var links = linklist.getElementsByTagName("a");
+	var slideshow = document.createElement("div");
+	slideshow.setAttribute("id","slideshow");
+	var preview = document.createElement("img");
+	preview.setAttribute("id","preview");
+	preview.setAttribute("alt","buliding blocks of web design");
+	preview.setAttribute("src","dist/img/topics.gif");
+	slideshow.appendChild(preview);
+	var list = document.getElementById("linklist");
+	insertAfter(slideshow,list);
+	var links = list.getElementsByTagName("a");
 	links[0].onmouseover = function(){
 		moveElement("preview",-100,0,10)
 	};

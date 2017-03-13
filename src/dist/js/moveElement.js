@@ -2,9 +2,18 @@ function moveElement(elementId,final_x,final_y,interval){
 	if (!document.getElementById) return false;
 	if (!document.getElementById(elementId)) return false;
 	var element = document.getElementById(elementId);
+	if (!element.style.left) {
+		element.style.left = "0px";
+	};
+	if (!element.style.top) {
+		element.style.top = "0px";
+	};
+
 	if (element.movement) {
 		clearTimeout(element.movement)
+		console.log(element.movement)
 	};
+
 	var xpos = parseInt(element.style.left);
 	var ypos = parseInt(element.style.top);
 	var dist = 0;
@@ -30,5 +39,6 @@ function moveElement(elementId,final_x,final_y,interval){
 	element.style.left = xpos+"px";
 	element.style.top = ypos+"px";
 	var repeat = "moveElement('"+elementId+"',"+final_x+","+final_y+","+interval+")"
-	movement = setTimeout(repeat,interval);
+	element.movement = setTimeout(repeat,interval);
+
 }
